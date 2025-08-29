@@ -1,1 +1,2 @@
-# Tata-Gen-AI-Powered-Data-Analytics
+# DATA ANALYTICS USING AI
+( JOB SIMULATION BY TATA & FORAGE )
