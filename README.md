@@ -19,28 +19,31 @@ The main goal is to analyze customer data to predict delinquency risks using adv
 ## Project Tasks
 
 The project is broken down into the following key tasks:
-*1.* EDA using GenAI: Conduct an exploratory analysis of the provided datasets using GenAI tools to summarize data, handle missing values, and identify risk profiles.
 
-2. Predictive Modeling using GenAI: Apply common credit risk modeling techniques (e.g., decision trees, logistic regression, neural networks) and evaluate model performance with a focus on ethical considerations like bias and fairness.
+**1.** EDA using GenAI: Conduct an exploratory analysis of the provided datasets using GenAI tools to summarize data, handle missing values, and identify risk profiles.
 
-3. Additional Refinement: Develop a structured recommendation framework with next steps, key takeaways, and business justifications.
+**2.** Predictive Modeling using GenAI: Apply common credit risk modeling techniques (e.g., decision trees, logistic regression, neural networks) and evaluate model performance with a focus on ethical considerations like bias and fairness.
 
-4. Final Presentation: Design a presentation outlining the framework for an AI-powered collections system, including guardrails to ensure fair decision-making.
+**3.** Additional Refinement: Develop a structured recommendation framework with next steps, key takeaways, and business justifications.
 
-Task 1: EDA using GenAI
+**4.** Final Presentation: Design a presentation outlining the framework for an AI-powered collections system, including guardrails to ensure fair decision-making.
+
+## Task 1: EDA using GenAI
+
 Exploratory data analysis (EDA) is the foundational step in understanding a dataset before developing predictive models. It helps uncover patterns, inconsistencies, and missing values to ensure data quality and reliability.
 
-Why EDA Matters in Predicting Delinquency:
-Ensures data integrity: Identifies missing values, duplicates, and inconsistencies.
+Why EDA Matters in Predicting Delinquency ?
 
-Highlights patterns and anomalies: Helps detect trends in customer behavior.
+* Ensures data integrity: Identifies missing values, duplicates, and inconsistencies.
 
-Prevents biased models: Reduces the risk of unfair treatment by ensuring diverse data representation.
+* Highlights patterns and anomalies: Helps detect trends in customer behavior.
 
-Supports better decision-making: Provides clear insights for proactive customer engagement.
+* Prevents biased models: Reduces the risk of unfair treatment by ensuring diverse data representation.
 
-Key Steps in Conducting EDA
-Understanding the dataset: Identifying key variables, data types, and missing values.
+* Supports better decision-making: Provides clear insights for proactive customer engagement.
+
+### Key Steps in Conducting EDA:
+** Understanding the dataset: Identifying key variables, data types, and missing values.
 
 Identifying missing values and outliers: Deciding whether to remove or impute missing data.
 
