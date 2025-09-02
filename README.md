@@ -8,7 +8,7 @@ As an AI transformation consultant at Tata iQ, the primary objective is to lever
 
 The main goal is to analyze customer data to predict delinquency risks using advanced analytics. This involves:
 
-*Performing exploratory data analysis (EDA) to uncover insights from the data.
+* Performing exploratory data analysis (EDA) to uncover insights from the data.
 
 * Building predictive models to identify at-risk customers.
 
