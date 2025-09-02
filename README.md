@@ -156,6 +156,7 @@ This report summarizes the EDA performed on the delinquency prediction dataset. 
 
 **2. Dataset Overview**
    Number of records: 500
+   
    Key variables: Customer_ID, Age, Income, Credit_Score, Credit_Utilization, Missed_Payments, Delinquent_Account, Loan_Balance, Debt_to_Income_Ratio, Employment_Status, Account_Tenure,    Credit_Card_Type, Location, and Month_1 - Month_6.
    Data types: A mix of numerical (float64, int64) and categorical (object) data.
    Anomalies:
