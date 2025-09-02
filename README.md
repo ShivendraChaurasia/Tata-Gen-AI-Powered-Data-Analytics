@@ -197,7 +197,7 @@ Generative AI tools were used to accelerate the EDA process.
 
    * "Provide all the steps as of now from the beginning to last in a ipynb file."
 
-### 6. Conclusion & Next Steps:
+**6. Conclusion & Next Steps:**
 
 This EDA provided valuable insights into the dataset's quality and characteristics. The key challenges are missing values, class imbalance, and the need for feature engineering.
 
