@@ -4,7 +4,7 @@ This repository documents the process of developing an AI-powered solution to re
 ### Project Overview
 As an AI transformation consultant at Tata iQ, the primary objective is to leverage data-driven decision-making to solve challenges in the financial services sector. This project focuses on helping Geldium Finance, a financial services company, address its high credit card delinquency rate.
 
-## Goal
+### Goal
 
 The main goal is to analyze customer data to predict delinquency risks using advanced analytics. This involves:
 
@@ -16,7 +16,7 @@ The main goal is to analyze customer data to predict delinquency risks using adv
 
 * Ensuring all AI-driven solutions are ethical, explainable, and effective.
 
-## Project Tasks
+### Project Tasks
 
 The project is broken down into the following key tasks:
 
@@ -73,7 +73,7 @@ The initial analysis produced the following key findings:
 
 ### Notable Missing or Inconsistent Data
 
-* #### Missing Values:
+* **Missing Values:**
 
     * Income: 7.8% missing (39 of 500 records).
     * Loan_Balance: 5.8% missing (29 of 500 records).
