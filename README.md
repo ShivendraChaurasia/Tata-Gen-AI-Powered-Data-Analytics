@@ -585,82 +585,103 @@ Evaluating a delinquency prediction model requires a comprehensive strategy that
 * **Relevance to Delinquency Prediction:** Ensuring fairness is critical to avoid discriminatory lending practices. We would analyze these metrics for relevant demographic segments (if available in an ethical and compliant manner) to ensure that the model does not disproportionately flag certain groups as high-risk, or conversely, overlooks risk in others, leading to equitable treatment and regulatory compliance. If bias is detected, mitigation strategies (as previously discussed) would be implemented.
 
 ## TASK-3
-Additional Refinement
+
 Translate your predictive findings into a clear, stakeholder-ready report for Geldium’s Head of Collections. This report will be used to inform the team’s next steps and shape how they apply AI insights in their decision-making.
 
-Step 1: Summary of predictive insights
+**Step 1: Summary of predictive insights**
+
 Use insights from your EDA (Task 1) and the structured predictive model framework (Task 2) to explain:
 
-What key customer segments are at high risk of delinquency
-Which variables most strongly influence delinquency
+* What key customer segments are at high risk of delinquency.
+
+* Which variables most strongly influence delinquency.
+
 Prompts to try:
 
-Summarize top predictors of customer delinquency based on dataset analysis.
-Identify customer segments with the highest delinquency risk and explain why.
-GenAI - Output,
+*Summarize top predictors of customer delinquency based on dataset analysis. Identify customer segments with the highest delinquency risk and explain why.*
+
+**GenAI: Output**
 
 Based on the analysis of the cleaned dataset, customer segments with the highest delinquency risk can be identified by focusing on their financial behavior and recent payment history. While some traditional risk indicators showed counter-intuitive average values in the delinquent group (e.g., slightly higher average Credit_Score and slightly lower average Missed_Payments and Loan_Balance), more direct and recent behavioral patterns reveal clearer risk segments.
 
 Here are the customer segments with the highest delinquency risk:
 
-Customers exhibiting a recent increase in 'Late' payment statuses:
+**1. Customers exhibiting a recent increase in 'Late' payment statuses:**
 
-Why: The analysis of monthly payment statuses reveals that customers with delinquent accounts tend to have a noticeably higher proportion of 'Late' payments in recent months, specifically in Month_4 and Month_5, compared to non-delinquent customers. This indicates a deteriorating and immediate payment behavior trend, signifying a heightened current risk of delinquency.
-Customers with slightly higher Credit Utilization and Debt-to-Income Ratios:
+   * Why: The analysis of monthly payment statuses reveals that customers with delinquent accounts tend to have a noticeably higher proportion of 'Late' payments in recent months,                 specifically in Month_4 and Month_5, compared to non-delinquent customers. This indicates a deteriorating and immediate payment behavior trend, signifying a heightened current           risk of delinquency.
 
-Why: Although the average differences are small, customers with delinquent accounts consistently show slightly higher mean Credit_Utilization and Debt_to_Income_Ratio. These factors indicate that a larger portion of their available credit is being used and a greater share of their income is allocated to debt, suggesting financial strain and a higher likelihood of struggling to meet payment obligations.
+**2. Customers with slightly higher Credit Utilization and Debt-to-Income Ratios:**
+
+   * Why: Although the average differences are small, customers with delinquent accounts consistently show slightly higher mean Credit_Utilization and Debt_to_Income_Ratio. These                  factors indicate that a larger portion of their available credit is being used and a greater share of their income is allocated to debt, suggesting financial strain and a                higher likelihood of struggling to meet payment obligations.
+
 While generally considered high-risk factors, the simple mean Credit_Score, Missed_Payments, and Loan_Balance did not directly differentiate delinquent accounts in this dataset as expected, indicating that current delinquency might be driven by more recent behavioral shifts or complex interactions rather than solely by historical static scores or overall missed payment counts.
 
-Action: Create a simple 3-bullet list of "Top 3 Risk Factors" for easy communication.
+**Action:**
 
 Here are the top 3 risk factors for delinquency, simplified for easy communication:
 
-Deteriorating Payment History: Customers showing a recent trend of 'Late' or 'Missed' payments are at higher risk.
-High Credit Utilization: Individuals using a large portion of their available credit are more likely to become delinquent.
-Elevated Debt-to-Income Ratio: A high proportion of income committed to debt indicates financial strain and increased risk of defaulting.
-Step 2: Recommendation framework
+* Deteriorating Payment History: Customers showing a recent trend of 'Late' or 'Missed' payments are at higher risk.
+
+* High Credit Utilization: Individuals using a large portion of their available credit are more likely to become delinquent.
+
+* Elevated Debt-to-Income Ratio: A high proportion of income committed to debt indicates financial strain and increased risk of defaulting.
+
+**Step 2: Recommendation framework**
+
 Choose one key insight and turn it into a SMART business recommendation. Think through:
 
-What action the business could take based on this insight
-What action would be most effective, feasible, and aligned with Geldium’s goals?
-How you would explain the recommendation to stakeholders
+* What action the business could take based on this insight?
+
+* What action would be most effective, feasible, and aligned with Geldium’s goals?
+
+* How you would explain the recommendation to stakeholders?
+
 Prompts to try:
 
-Turn this insight — 'High credit utilization increases delinquency' — into a SMART business recommendation.
-Draft an executive summary explaining why this recommendation will reduce delinquency and align with business objectives.
-Executive Summary: Reducing Delinquency through Advanced Predictive Modeling
+*Turn this insight — 'High credit utilization increases delinquency' — into a SMART business recommendation. Draft an executive summary explaining why this recommendation will reduce delinquency and align with business objectives.*
+
+### Executive Summary: Reducing Delinquency through Advanced Predictive Modeling
+
 This report recommends the adoption of a Gradient Boosting Machine model for predicting customer delinquency, a strategic move designed to significantly reduce financial losses and align with Geldium's core business objectives. Our analysis identified key high-risk indicators, including deteriorating payment histories, high credit utilization, and elevated debt-to-income ratios. By leveraging a Gradient Boosting Machine, Geldium can move beyond reactive measures to proactively identify customers at the highest risk of defaulting. This advanced model's superior predictive accuracy will enable more precise risk assessments, allowing for timely and targeted interventions such such as personalized financial counseling, adjusted credit terms, or proactive collections. This not only minimizes potential loan losses but also optimizes resource allocation, improves customer retention by supporting at-risk clients, and strengthens Geldium's financial stability, ultimately contributing to sustainable growth and a healthier bottom line.
 
-Action: Write one SMART goal and a 1–2 sentence explanation for stakeholders.
+**Action:**
 
 Here is a SMART goal and a concise explanation for stakeholders:
 
-SMART Goal: To implement and deploy a Gradient Boosting Machine delinquency prediction model by Q4 2025, aiming to reduce the total value of new delinquent accounts by 10% within six months of deployment, while maintaining equitable outcomes across all customer segments.
+* **SMART Goal:** To implement and deploy a Gradient Boosting Machine delinquency prediction model by Q4 2025, aiming to reduce the total value of new delinquent accounts by 10% within six months of deployment, while maintaining equitable outcomes across all customer segments.
 
-Explanation for Stakeholders: This goal focuses on leveraging advanced analytics to significantly improve our ability to identify and mitigate credit risk. By reducing the value of delinquent accounts, we directly enhance profitability and strengthen our financial portfolio.
+* **Explanation for Stakeholders:** This goal focuses on leveraging advanced analytics to significantly improve our ability to identify and mitigate credit risk. By reducing the value of delinquent accounts, we directly enhance profitability and strengthen our financial portfolio.
 
-Step 3: Ethical and responsible AI considerations
+**Step 3: Ethical and responsible AI considerations**
+
 Outline a brief ethics section, covering:
 
-Any fairness or bias concerns your model or recommendation might raise
-How you would explain the model’s predictions to non-technical stakeholders
-How your approach promotes responsible and transparent AI use
+* Any fairness or bias concerns your model or recommendation might raise?
+
+* How you would explain the model’s predictions to non-technical stakeholders?
+
+* How your approach promotes responsible and transparent AI use?
+  
 Prompts to try:
 
-List two fairness risks for a financial risk prediction model and suggest mitigation strategies.
-How would you explain AI model predictions in plain language to non-technical stakeholders?
-GenAI -Output,
+*List two fairness risks for a financial risk prediction model and suggest mitigation strategies. How would you explain AI model predictions in plain language to non-technical stakeholders?*
+
+**GenAI Output:**
 
 Here are two fairness risks for a financial risk prediction model and suggested mitigation strategies:
 
-Fairness Risks and Mitigation Strategies
-Fairness Risk: Disparate Impact (Unequal Outcome Rates)
+### Fairness Risks and Mitigation Strategies
 
-Description: This risk occurs when a model's predictions lead to significantly different outcomes (e.g., loan approval rates or predicted delinquency rates) for different demographic or protected groups, even if those groups are equally qualified or have similar underlying risk profiles. For instance, a model might disproportionately flag individuals from a certain racial or age group as high-risk, leading to fewer approvals for that group.
-Mitigation Strategy: Re-weighting or Threshold Adjustment:
-Re-weighting (Pre-processing): Assign different weights to training examples during model training based on their protected attribute and outcome, to ensure that the model learns to satisfy fairness criteria (e.g., demographic parity) by giving more importance to underrepresented or disadvantaged groups.
-Threshold Adjustment (Post-processing): After the model predicts a risk score, adjust the classification threshold (e.g., the score above which a loan is approved) for different protected groups. This ensures that the approval rate or other outcome metrics are more equitable across groups, even if the raw risk scores differ.
-Fairness Risk: Disparate Performance (Unequal Predictive Accuracy)
+**1. Fairness Risk: Disparate Impact (Unequal Outcome Rates)**
+
+* **Description:** This risk occurs when a model's predictions lead to significantly different outcomes (e.g., loan approval rates or predicted delinquency rates) for different demographic or protected groups, even if those groups are equally qualified or have similar underlying risk profiles. For instance, a model might disproportionately flag individuals from a certain racial or age group as high-risk, leading to fewer approvals for that group.
+
+* **Mitigation Strategy:** Re-weighting or Threshold Adjustment:
+  
+   * Re-weighting (Pre-processing): Assign different weights to training examples during model training based on their protected attribute and outcome, to ensure that the model learns       to satisfy fairness criteria (e.g., demographic parity) by giving more importance to underrepresented or disadvantaged groups.
+     
+   * Threshold Adjustment (Post-processing): After the model predicts a risk score, adjust the classification threshold (e.g., the score above which a loan is approved) for different       protected groups. This ensures that the approval rate or other outcome metrics are more equitable across groups, even if the raw risk scores differ.
+   Fairness Risk: Disparate Performance (Unequal Predictive Accuracy)
 
 Description: This risk arises when a model's predictive performance (e.g., its accuracy, true positive rate, or false positive rate) varies significantly across different protected groups. For example, a credit risk model might be very accurate for one demographic group but perform poorly (e.g., miss many actual delinquents or incorrectly flag many non-delinquents) for another group, leading to unequal quality of service or disproportionate errors.
 Mitigation Strategy: Equalized Odds (In-processing or Post-processing):
