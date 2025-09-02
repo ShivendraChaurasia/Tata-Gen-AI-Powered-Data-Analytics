@@ -66,6 +66,7 @@ Result
 <img width="1307" height="564" alt="Screenshot 2025-08-29 183803" src="https://github.com/user-attachments/assets/7afd0403-bf9e-47ba-a780-a37e7c782c26" />
 
 <img width="1300" height="568" alt="Screenshot 2025-08-29 184102" src="https://github.com/user-attachments/assets/655d998e-f88b-4dab-984a-c68077b9d88c" />
+
 ### Data Analysis Findings Report
 
 The initial analysis produced the following key findings:
@@ -75,14 +76,12 @@ The initial analysis produced the following key findings:
 * #### Missing Values:
 
     * 'Income:' 7.8% missing (39 of 500 records).
-
     * 'Loan_Balance:' 5.8% missing (29 of 500 records).
-
     * 'Credit_Score:' 0.4% missing (2 of 500 records).
 
 * #### Inconsistent Data:
 
-      * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
+   * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
 Key Anomalies
 Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
