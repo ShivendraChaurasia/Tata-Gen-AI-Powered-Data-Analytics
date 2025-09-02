@@ -681,33 +681,54 @@ Here are two fairness risks for a financial risk prediction model and suggested 
    * Re-weighting (Pre-processing): Assign different weights to training examples during model training based on their protected attribute and outcome, to ensure that the model learns       to satisfy fairness criteria (e.g., demographic parity) by giving more importance to underrepresented or disadvantaged groups.
      
    * Threshold Adjustment (Post-processing): After the model predicts a risk score, adjust the classification threshold (e.g., the score above which a loan is approved) for different       protected groups. This ensures that the approval rate or other outcome metrics are more equitable across groups, even if the raw risk scores differ.
-   Fairness Risk: Disparate Performance (Unequal Predictive Accuracy)
+  
+**2. Fairness Risk: Disparate Performance (Unequal Predictive Accuracy)**
 
-Description: This risk arises when a model's predictive performance (e.g., its accuracy, true positive rate, or false positive rate) varies significantly across different protected groups. For example, a credit risk model might be very accurate for one demographic group but perform poorly (e.g., miss many actual delinquents or incorrectly flag many non-delinquents) for another group, leading to unequal quality of service or disproportionate errors.
-Mitigation Strategy: Equalized Odds (In-processing or Post-processing):
-Equalized Odds (In-processing): Modify the model's training objective to ensure that the true positive rates (and potentially false positive rates) are equal across different protected groups. This encourages the model to be equally good at identifying positive cases (e.g., actual delinquents) across all groups.
-Equalized Odds (Post-processing): After the model has generated predictions, adjust the decision thresholds for each protected group independently to equalize the true positive rates (and optionally false positive rates). This ensures that the model is equally effective at identifying genuine positives and negatives across different groups, providing a more equitable prediction quality.
-Action: List two fairness risks and how you would mitigate them.
+* **Description:** This risk arises when a model's predictive performance (e.g., its accuracy, true positive rate, or false positive rate) varies significantly across different protected groups. For example, a credit risk model might be very accurate for one demographic group but perform poorly (e.g., miss many actual delinquents or incorrectly flag many non-delinquents) for another group, leading to unequal quality of service or disproportionate errors.
 
-Fairness Risks and Mitigation Strategies
+* **Mitigation Strategy: Equalized Odds (In-processing or Post-processing):**
+
+   * Equalized Odds (In-processing): Modify the model's training objective to ensure that the true positive rates (and potentially false positive rates) are equal across different          protected groups. This encourages the model to be equally good at identifying positive cases (e.g., actual delinquents) across all groups.
+
+   * Equalized Odds (Post-processing): After the model has generated predictions, adjust the decision thresholds for each protected group independently to equalize the true positive       rates (and optionally false positive rates). This ensures that the model is equally effective at identifying genuine positives and negatives across different groups, providing a more    equitable prediction quality.
+
+**Action: List two fairness risks and how you would mitigate them?**
+
+### Fairness Risks and Mitigation Strategies
+
 Here are two common fairness risks in financial risk prediction models and strategies to mitigate them:
 
-Fairness Risk: Disparate Impact (Unequal Outcome Rates)
+**1. Fairness Risk: Disparate Impact (Unequal Outcome Rates)**
 
-Description: This risk occurs when the model's predictions lead to significantly different outcomes (e.g., loan approval rates or predicted delinquency rates) for different demographic groups, even if those groups have similar underlying risk profiles. This can inadvertently discriminate against certain protected attributes.
-Mitigation Strategy: Re-weighting or Threshold Adjustment.
-Re-weighting (Pre-processing): Adjusting the weights of data points in the training set to give more importance to underrepresented or disadvantaged groups, ensuring the model learns more equitably.
-Threshold Adjustment (Post-processing): Modifying the decision threshold (e.g., the risk score cut-off for approval) for different groups after the model has made its predictions, to equalize outcome rates across groups.
-Fairness Risk: Disparate Performance (Unequal Predictive Accuracy)
+* **Description:** This risk occurs when the model's predictions lead to significantly different outcomes (e.g., loan approval rates or predicted delinquency rates) for different demographic groups, even if those groups have similar underlying risk profiles. This can inadvertently discriminate against certain protected attributes.
 
-Description: This risk arises when the model's predictive performance (e.g., its accuracy, true positive rate, or false positive rate) varies significantly across different protected groups. For instance, the model might be very accurate for one demographic group but perform poorly (e.g., miss many actual delinquents or incorrectly flag many non-delinquents) for another.
-Mitigation Strategy: Equalized Odds (In-processing or Post-processing).
-Equalized Odds (In-processing): Incorporating fairness constraints directly into the model's training objective to ensure that true positive rates (and potentially false positive rates) are similar across all protected groups.
-Equalized Odds (Post-processing): Adjusting the decision thresholds for each group after predictions are made to equalize specific performance metrics (like true positive rates) across groups, ensuring the model is equally effective at identifying genuine positives and negatives for everyone.
-TASK - 4
-Final Presentation
+* **Mitigation Strategy:** 
+
+   * **Re-weighting (Pre-processing):** Adjusting the weights of data points in the training set to give more importance to underrepresented or disadvantaged groups, ensuring the model       learns more equitably.
+   * **Threshold Adjustment (Post-processing):** Modifying the decision threshold (e.g., the risk score cut-off for approval) for different groups after the model has made its                predictions, to equalize outcome rates across groups.
+
+* **2. Fairness Risk: Disparate Performance (Unequal Predictive Accuracy)**
+
+* **Description:** This risk arises when the model's predictive performance (e.g., its accuracy, true positive rate, or false positive rate) varies significantly across different protected groups. For instance, the model might be very accurate for one demographic group but perform poorly (e.g., miss many actual delinquents or incorrectly flag many non-delinquents) for another.
+
+* **Mitigation Strategy:**
+   * **Equalized Odds (In-processing):** Incorporating fairness constraints directly into the model's training objective to ensure that true positive rates (and potentially false             positive rates) are similar across all protected groups.
+
+   * **Equalized Odds (Post-processing):** Adjusting the decision thresholds for each group after predictions are made to equalize specific performance metrics (like true positive          rates) across groups, ensuring the model is equally effective at identifying genuine positives and negatives for everyone.
+
+## TASK - 4
+
+### Final Presentation
 Link -
-https://github.com/Dhritionly/Tata-Job-Simulation/blob/main/Final%20PPT%20-PDF.pdf
 
-THANK YOU
 
+**Driving Future Success:**
+
+I am excited to apply these insights and skills to future projects, driving continued growth and success.
+
+Thank you for reading.
+
+## Author
+**Shivendra Chaurasia**
+📧 [Email](shivendrachaurasia855gmail.com)
+🔗 [LinkedIn](https://www.linkedin.com/in/shivendrachaurasia)
