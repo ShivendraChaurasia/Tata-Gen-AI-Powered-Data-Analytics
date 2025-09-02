@@ -367,41 +367,49 @@ GenAI prompt:
 
 *"Explain why this model predicted high delinquency risk for a specific customer."*
 
-"While GenAI is great for assisting in summarizing explanations, relying solely on it for explainability presents significant risks—it may "hallucinate" or generate inaccurate justifications that do not reflect the true model logic. Best practice is to use established interpretability frameworks to ensure transparency and accuracy."
+While GenAI is great for assisting in summarizing explanations, relying solely on it for explainability presents significant risks—it may "hallucinate" or generate inaccurate justifications that do not reflect the true model logic. Best practice is to use established interpretability frameworks to ensure transparency and accuracy.
 
-Fairness
+**Fairness**
+
 A fair model should:
 
-Avoid systematic disadvantages for certain demographic groups.
-Be tested for disparate impact to ensure fairness.
-Use diverse and representative training data to prevent reinforcing biases.
+* Avoid systematic disadvantages for certain demographic groups.
+* Be tested for disparate impact to ensure fairness.
+* Use diverse and representative training data to prevent reinforcing biases.
+  
 GenAI prompt:
-"Assess fairness in this model’s predictions. Does it disproportionately flag certain customer demographics as high risk?"
 
-*GenAI should not be solely relied upon to assess fairness, as it does not inherently understand regulatory compliance or ethical considerations in financial decision-making. Responsible AI development requires the application of fairness testing frameworks (e.g., equalized odds, demographic parity) and human judgment.
+*"Assess fairness in this model’s predictions. Does it disproportionately flag certain customer demographics as high risk?"*
+
+GenAI should not be solely relied upon to assess fairness, as it does not inherently understand regulatory compliance or ethical considerations in financial decision-making. Responsible AI development requires the application of fairness testing frameworks (e.g., equalized odds, demographic parity) and human judgment.
 
 By applying these principles, analysts can ensure that AI-powered risk assessments are transparent, responsible, and unbiased in financial decision-making. However, achieving truly responsible and unbiased financial decision-making also requires human oversight, regulatory compliance, and formal fairness audits that go beyond what GenAI alone can ensure.
 
-Now, Let’s Start the predictive modelling
+**Now, Let’s Start the predictive modelling**
 
-Step 1: Generate model logic using GenAI
-The type of model you would use (e.g., logistic regression, decision trees, neural networks).
-Key input features and how they contribute to predictions.
-The general workflow of how the model would process the data to generate outputs.
+**Step 1: Generate model logic using GenAI**
+
+* The type of model you would use (e.g., logistic regression, decision trees, neural networks).
+* Key input features and how they contribute to predictions.
+* The general workflow of how the model would process the data to generate outputs.
+
 Prompts to try:
 
-Outline a predictive modeling pipeline to forecast credit delinquency, from feature selection to model evaluation.
-Suggest 2 modeling options (simple and complex) for predicting delinquency, and recommend one.
-Explain how the delinquency risk model transforms customer input variables into a final risk prediction, from data ingestion to prediction output.
-Generate sample code or clear pseudocode for building a credit risk prediction model, using relevant features like income, credit utilization, and missed payments.
-GenAI Output,
+*Outline a predictive modeling pipeline to forecast credit delinquency, from feature selection to model evaluation.*
+
+*Suggest 2 modeling options (simple and complex) for predicting delinquency, and recommend one.*
+
+*Explain how the delinquency risk model transforms customer input variables into a final risk prediction, from data ingestion to prediction output.*
+
+*Generate sample code or clear pseudocode for building a credit risk prediction model, using relevant features like income, credit utilization, and missed payments.*
+
+**GenAI Output:**
 
 Here are two modeling options (simple and complex) for predicting delinquency, along with a recommendation:
 
-Modeling Options for Delinquency Prediction
-Simple Model Option: Logistic Regression
+* **Simple Model Option: Logistic Regression**
 
-Description: Logistic Regression is a statistical model used for binary classification. It estimates the probability of an instance belonging to a particular class (in this case, being delinquent) by fitting the data to a logistic function.
+* Description: Logistic Regression is a statistical model used for binary classification. It estimates the probability of an instance belonging to a particular class (in this case, being delinquent) by fitting the data to a logistic function.
 Pros: It's highly interpretable, computationally efficient, and provides probabilities, which can be useful for risk scoring. It serves as a good baseline model.
 Cons: It assumes a linear relationship between independent variables and the log-odds of the dependent variable. It may not capture complex, non-linear relationships in the data as effectively as more advanced models.
 Complex Model Option: Gradient Boosting Machines (e.g., LightGBM or XGBoost)
