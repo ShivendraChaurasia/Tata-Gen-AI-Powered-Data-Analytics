@@ -131,7 +131,7 @@ The data cleaning and imputation steps were implemented in a Python notebook.
 My Notebook: [Uploading Geldium Data Cleaning.ipynb…]()
 
 
-#### Detect Patterns and Risk Factors
+### Detect Patterns and Risk Factors
 The analysis identified several high-risk indicators for delinquency.
 
 * **Missed_Payments:** A higher number of missed payments directly increases delinquency risk.
@@ -144,7 +144,7 @@ The analysis identified several high-risk indicators for delinquency.
 
 * **"Late" or "Missed" Payment Status (Month_1 to Month_6):** A trend of deteriorating payment behavior is a strong precursor to delinquency.
 
-#### Insights Impacting Delinquency Prediction
+### Insights Impacting Delinquency Prediction
 * The significant class imbalance in the target variable must be addressed to build an accurate model.
 * Skewed numerical distributions may require transformation (e.g., log transformation) for certain models.
 * The time-series potential of the Month_x variables can be leveraged by creating new features (e.g., number of late payments in the last 3 months).
