@@ -34,22 +34,22 @@ Exploratory data analysis (EDA) is the foundational step in understanding a data
 
 Why EDA Matters in Predicting Delinquency ?
 
-* Ensures data integrity: Identifies missing values, duplicates, and inconsistencies.
+* 'Ensures data integrity:' Identifies missing values, duplicates, and inconsistencies.
 
-* Highlights patterns and anomalies: Helps detect trends in customer behavior.
+* 'Highlights patterns and anomalies:' Helps detect trends in customer behavior.
 
-* Prevents biased models: Reduces the risk of unfair treatment by ensuring diverse data representation.
+* 'Prevents biased models:' Reduces the risk of unfair treatment by ensuring diverse data representation.
 
-* Supports better decision-making: Provides clear insights for proactive customer engagement.
+* 'Supports better decision-making:' Provides clear insights for proactive customer engagement.
 
 ### Key Steps in Conducting EDA:
-* Understanding the dataset: Identifying key variables, data types, and missing values.
+* 'Understanding the dataset:' Identifying key variables, data types, and missing values.
 
-* Identifying missing values and outliers: Deciding whether to remove or impute missing data.
+* 'Identifying missing values and outliers:' Deciding whether to remove or impute missing data.
 
-* Understanding relationships between variables: Exploring correlations, such as between credit utilization and delinquency risk.
+* 'Understanding relationships between variables:' Exploring correlations, such as between credit utilization and delinquency risk.
 
-* Detecting patterns and risk factors: Identifying behaviors associated with delinquency.
+* 'Detecting patterns and risk factors:' Identifying behaviors associated with delinquency.
 
 ### Review the Dataset using GEN -AI
 
@@ -66,24 +66,23 @@ Result
 <img width="1307" height="564" alt="Screenshot 2025-08-29 183803" src="https://github.com/user-attachments/assets/7afd0403-bf9e-47ba-a780-a37e7c782c26" />
 
 <img width="1300" height="568" alt="Screenshot 2025-08-29 184102" src="https://github.com/user-attachments/assets/655d998e-f88b-4dab-984a-c68077b9d88c" />
-
-
 ### Data Analysis Findings Report
+
 The initial analysis produced the following key findings:
 
-Notable Missing or Inconsistent Data
+### Notable Missing or Inconsistent Data
 
 * #### Missing Values:
 
-    * Income: 7.8% missing (39 of 500 records).
+    * 'Income:' 7.8% missing (39 of 500 records).
 
-    * Loan_Balance: 5.8% missing (29 of 500 records).
+    * 'Loan_Balance:' 5.8% missing (29 of 500 records).
 
-    * Credit_Score: 0.4% missing (2 of 500 records).
+    * 'Credit_Score:' 0.4% missing (2 of 500 records).
 
-Inconsistent Data:
+* #### Inconsistent Data:
 
-Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
+      * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
 Key Anomalies
 Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
