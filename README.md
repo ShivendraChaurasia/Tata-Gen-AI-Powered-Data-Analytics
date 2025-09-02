@@ -38,7 +38,7 @@ Why EDA Matters in Predicting Delinquency ?
 
 * 'Highlights patterns and anomalies:' Helps detect trends in customer behavior.
 
-* 'Prevents biased models:' Reduces the risk of unfair treatment by ensuring diverse data representation.
+*    'Prevents biased models:' Reduces the risk of unfair treatment by ensuring diverse data representation.
 
 * 'Supports better decision-making:' Provides clear insights for proactive customer engagement.
 
