@@ -43,15 +43,15 @@ Why EDA Matters in Predicting Delinquency ?
 * Supports better decision-making: Provides clear insights for proactive customer engagement.
 
 ### Key Steps in Conducting EDA:
-** Understanding the dataset: Identifying key variables, data types, and missing values.
+* Understanding the dataset: Identifying key variables, data types, and missing values.
 
-Identifying missing values and outliers: Deciding whether to remove or impute missing data.
+* Identifying missing values and outliers: Deciding whether to remove or impute missing data.
 
-Understanding relationships between variables: Exploring correlations, such as between credit utilization and delinquency risk.
+* Understanding relationships between variables: Exploring correlations, such as between credit utilization and delinquency risk.
 
-Detecting patterns and risk factors: Identifying behaviors associated with delinquency.
+* Detecting patterns and risk factors: Identifying behaviors associated with delinquency.
 
-Review the Dataset using GEN -AI
+### Review the Dataset using GEN -AI
 
 The dataset was uploaded to a GenAI tool (e.g., Gemini, ChatGPT) to perform an initial analysis.
 <img width="1296" height="591" alt="Screenshot 2025-08-29 183912" src="https://github.com/user-attachments/assets/cfc13e1e-f37b-40b5-bdd2-37a62f5817b4" />
