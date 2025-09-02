@@ -19,7 +19,7 @@ The main goal is to analyze customer data to predict delinquency risks using adv
 ## Project Tasks
 
 The project is broken down into the following key tasks:
-1. EDA using GenAI: Conduct an exploratory analysis of the provided datasets using GenAI tools to summarize data, handle missing values, and identify risk profiles.
+*1.* EDA using GenAI: Conduct an exploratory analysis of the provided datasets using GenAI tools to summarize data, handle missing values, and identify risk profiles.
 
 2. Predictive Modeling using GenAI: Apply common credit risk modeling techniques (e.g., decision trees, logistic regression, neural networks) and evaluate model performance with a focus on ethical considerations like bias and fairness.
 
