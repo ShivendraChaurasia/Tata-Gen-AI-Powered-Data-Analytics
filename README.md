@@ -105,7 +105,7 @@ The initial analysis produced the following key findings:
 
 The initial assessment of the dataset reveals generally good data quality, with most features being complete and within expected ranges. However, the presence of missing values in Income and Loan_Balance requires careful handling, and the inconsistent capitalization in Employment_Status necessitates data cleaning. The most significant data quality challenge for modeling delinquency is the substantial class imbalance in the Delinquent_Account target variable, which must be addressed to build an effective predictive model. Overall, the dataset provides a solid foundation for building a delinquency prediction model, provided these identified issues are appropriately managed.
 
-#### Address Missing Data and Data Quality Issues:
+### Address Missing Data and Data Quality Issues:
 The following prompts were used to determine the best approach for handling missing data:
 
 “Suggest an imputation strategy for missing values in this dataset based on industry best practices.”
@@ -151,40 +151,28 @@ The analysis identified several high-risk indicators for delinquency.
 
 
 ### Exploratory Data Analysis (EDA) Summary Report
-1. Introduction
+**1. Introduction**
 This report summarizes the EDA performed on the delinquency prediction dataset. The goal was to understand the data's structure, identify patterns, detect anomalies, and pinpoint potential risk indicators for predicting customer delinquency.
 
-2. Dataset Overview
-Number of records: 500
+**2. Dataset Overview**
+   Number of records: 500
+   Key variables: Customer_ID, Age, Income, Credit_Score, Credit_Utilization, Missed_Payments, Delinquent_Account, Loan_Balance, Debt_to_Income_Ratio, Employment_Status, Account_Tenure,    Credit_Card_Type, Location, and Month_1 - Month_6.
+   Data types: A mix of numerical (float64, int64) and categorical (object) data.
+   Anomalies:
+   Class Imbalance: 84% non-delinquent vs. 16% delinquent.
+   Inconsistent Categorical Entries: Employment_Status required standardization.
+   Potential Outliers: Credit_Utilization values slightly above 1.0.
+   Skewed Distributions: Income, Loan_Balance, and Credit_Utilization.
 
-Key variables: Customer_ID, Age, Income, Credit_Score, Credit_Utilization, Missed_Payments, Delinquent_Account, Loan_Balance, Debt_to_Income_Ratio, Employment_Status, Account_Tenure, Credit_Card_Type, Location, and Month_1 - Month_6.
+**3. Missing Data Analysis**
+   Variables with missing values:
 
-Data types: A mix of numerical (float64, int64) and categorical (object) data.
-
-Anomalies:
-
-Class Imbalance: 84% non-delinquent vs. 16% delinquent.
-
-Inconsistent Categorical Entries: Employment_Status required standardization.
-
-Potential Outliers: Credit_Utilization values slightly above 1.0.
-
-Skewed Distributions: Income, Loan_Balance, and Credit_Utilization.
-
-3. Missing Data Analysis
-Variables with missing values:
-
-Income: 7.8%
-
-Loan_Balance: 5.8%
-
-Credit_Score: 0.4%
-
-Missing data treatment:
-
-Credit_Score: Imputed with the median.
-
-Income and Loan_Balance: Imputed with the median for simplicity during this initial phase.
+   Income: 7.8%
+   Loan_Balance: 5.8%
+   Credit_Score: 0.4%
+   Missing data treatment:
+   Credit_Score: Imputed with the median.
+   Income and Loan_Balance: Imputed with the median for simplicity during this initial phase.
 
 4. Key Findings and Risk Indicators
 The analysis confirmed that the class imbalance is a major challenge. The skewed numerical features may benefit from transformation. The Month_1 through Month_6 variables provide a crucial historical sequence of payment behavior. Strong correlations are expected between Delinquent_Account and variables like Credit_Score, Missed_Payments, and Credit_Utilization.
