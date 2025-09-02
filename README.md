@@ -80,7 +80,7 @@ The initial analysis produced the following key findings:
     * Credit_Score: 0.4% missing (2 of 500 records).
 
 * #### Inconsistent Data:
-      * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
+  * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
 ### Key Anomalies
    * Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
