@@ -256,94 +256,118 @@ Three core modeling approaches:
 We will explore these models further in the next section to help you select the right approach for this task.
 
 GenAI prompt:
+
 *"Based on this dataset, which predictive modeling techniques are best suited for identifying customers likely to miss payments? Explain why."*
 
-2. Generating model code without coding
+**2. Generating model code without coding**
+
 With the right prompts, GenAI can generate an initial modeling workflow in Python, R, or SQL. However, these outputs should be viewed as a starting point—manual review and refinement are essential to ensure alignment with best practices..
 
 GenAI prompt:
-"Generate a logistic regression model framework using this dataset to predict customer delinquency. Provide an explanation of each step, ensuring outputs are reviewed and refined for accuracy and fairness."
 
-3. Evaluating model performance
+*"Generate a logistic regression model framework using this dataset to predict customer delinquency. Provide an explanation of each step, ensuring outputs are reviewed and refined for accuracy and fairness."*
+
+**3. Evaluating model performance**
+
 Once a model is built, its accuracy must be assessed. GenAI can:
 
-Suggest evaluation metrics (e.g., accuracy, precision, recall).
-Interpret results and suggest improvements.
-Highlight ethical concerns, such as potential biases.
+* Suggest evaluation metrics (e.g., accuracy, precision, recall).
+* Interpret results and suggest improvements.
+* Highlight ethical concerns, such as potential biases.
+
 GenAI prompt:
-"Evaluate the performance of this predictive model using precision and recall. Identify any biases in the predictions."
+
+*"Evaluate the performance of this predictive model using precision and recall. Identify any biases in the predictions."*
 
 By using GenAI-powered modeling, analysts can efficiently build and refine predictive models without needing a technical background, making AI-powered decision-making more accessible in financial services.
 
-Common Techniques for Credit Risk Modeling
+### Common Techniques for Credit Risk Modeling
+
 Now that you understand how GenAI assists in predictive modeling, let's expand further on three commonly used techniques for credit risk assessment. Each has strengths and trade-offs, and your task will involve choosing the most suitable model for predicting delinquency risk.
 
-1. Decision trees – easy to interpret, great for risk assessment
+**1. Decision trees – easy to interpret, great for risk assessment**
+
 Decision trees split data into branches based on key features (e.g., income level, number of missed payments). At each step, the model asks a yes or no question, guiding decisions down different paths.
 
 Why use it for credit risk?
 
-Transparency – Easy to explain to stakeholders.
-Handles different types of data well – Works with both numerical and categorical data.
-Identifies key risk factors – Shows which customer attributes are most predictive of delinquency.
-GenAI prompt:
-"Generate a decision tree model to predict delinquency risk based on income, credit utilization, and missed payments. Explain how the model determines risk categories."
+* Transparency – Easy to explain to stakeholders.
+* Handles different types of data well – Works with both numerical and categorical data.
+* Identifies key risk factors – Shows which customer attributes are most predictive of delinquency.
 
-2. Logistic regression – simple, reliable, and great for probability estimation
+GenAI prompt:
+
+*"Generate a decision tree model to predict delinquency risk based on income, credit utilization, and missed payments. Explain how the model determines risk categories."*
+
+**2. Logistic regression – simple, reliable, and great for probability estimation**
+
 Logistic regression predicts the probability of an event occurring, such as whether a customer will or won’t become delinquent. It assigns a probability score (0 to 1), where a threshold (e.g., 0.5) determines classification.
 
 Why use it for credit risk?
 
-Great for binary predictions (e.g., delinquent vs. non-delinquent).
-Easy to interpret – Shows the impact of each variable on the outcome.
-Works well with structured data – Suitable for datasets with clear numerical patterns.
-GenAI prompt:
-"Explain how logistic regression can be used to predict credit card delinquency. Generate a simple model using income, debt-to-income ratio, and payment history."
+* Great for binary predictions (e.g., delinquent vs. non-delinquent).
+* Easy to interpret – Shows the impact of each variable on the outcome.
+* Works well with structured data – Suitable for datasets with clear numerical patterns.
 
-3. Neural networks – powerful for complex patterns but harder to interpret
+GenAI prompt:
+
+*"Explain how logistic regression can be used to predict credit card delinquency. Generate a simple model using income, debt-to-income ratio, and payment history."*
+
+**3. Neural networks – powerful for complex patterns but harder to interpret**
+
 Neural networks mimic the way human brains process information. They detect complex relationships between variables, making them highly effective for large datasets. However, they operate like a "black box," meaning their decision-making process is less transparent.
 
 Why use it for credit risk?
 
-Can uncover deep patterns in customer financial behavior.
-More accurate on large datasets than simpler models.
-Useful for predicting long-term credit risk trends.
-GenAI prompt:
-"Create a basic neural network model for predicting delinquency risk. Compare its strengths and weaknesses against decision trees and logistic regression."
+* Can uncover deep patterns in customer financial behavior.
+* More accurate on large datasets than simpler models.
+* Useful for predicting long-term credit risk trends.
 
-Which model should you choose?
+GenAI prompt:
+
+*"Create a basic neural network model for predicting delinquency risk. Compare its strengths and weaknesses against decision trees and logistic regression."*
+
+### Which model should you choose?
+
 Each model has strengths and trade-offs. In this task, your goal is to choose the best approach based on Geldium’s dataset and business needs.
 
-✅ Use decision trees if you need transparency and clear risk segmentation.
-✅ Use logistic regression if you need a probability-based approach that is easy to interpret.
-✅ Use neural networks if you have a complex dataset and need high accuracy at the cost of explainability.
+* Use decision trees if you need transparency and clear risk segmentation.
+* Use logistic regression if you need a probability-based approach that is easy to interpret.
+* Use neural networks if you have a complex dataset and need high accuracy at the cost of explainability.
 
-Bias, explainability, and fairness in credit risk modeling
+### Bias, explainability, and fairness in credit risk modeling
+
 AI-driven credit risk models must be accurate, explainable, and fair to ensure responsible financial decision-making. Even well-performing models can introduce bias, produce uninterpretable decisions, or unintentionally disadvantage certain customer groups. Addressing these risks is essential for ethical and legal compliance in financial services.
 
-Bias
+**Bias**
+
 Bias occurs when a model systematically favors or disadvantages certain groups, often due to historical inequalities or imbalanced data.
 
 Common causes of bias:
 
-Historical bias – If past lending decisions were unfair, the model may replicate those patterns.
-Selection bias – If the dataset does not represent all customer demographics equally, predictions may be inaccurate for some groups.
-Proxy bias – Certain variables (e.g., ZIP code) may unintentionally act as proxies for protected characteristics like race or gender.
+* Historical bias – If past lending decisions were unfair, the model may replicate those patterns.
+* Selection bias – If the dataset does not represent all customer demographics equally, predictions may be inaccurate for some groups.
+* Proxy bias – Certain variables (e.g., ZIP code) may unintentionally act as proxies for protected characteristics like race or gender.
+
 GenAI prompt:
-“Check for bias in this credit risk model. Are certain customer groups unfairly predicted as high risk?”
 
-*While GenAI can assist in identifying potential bias patterns, it should not be relied upon as an authoritative tool for bias detection. GenAI itself can embed biases from its training data and may produce misleading results. Best practice is to use formal statistical fairness metrics (e.g., disparate impact analysis, demographic parity) alongside human oversight.
+*“Check for bias in this credit risk model. Are certain customer groups unfairly predicted as high risk?”*
 
-Explainability
+While GenAI can assist in identifying potential bias patterns, it should not be relied upon as an authoritative tool for bias detection. GenAI itself can embed biases from its training data and may produce misleading results. Best practice is to use formal statistical fairness metrics (e.g., disparate impact analysis, demographic parity) alongside human oversight.
+
+**Explainability**
+
 Explainability ensures that decision-makers can understand and justify a model’s predictions.
 
-Decision trees and logistic regression are more interpretable and show clear decision paths.
-Neural networks are highly complex and function as "black boxes," making explainability difficult.
-Analysts use tools like SHAP (Shapley Additive Explanations) to break down how different factors contribute to predictions.
-GenAI prompt:
-"Explain why this model predicted high delinquency risk for a specific customer."
+* Decision trees and logistic regression are more interpretable and show clear decision paths.
+* Neural networks are highly complex and function as "black boxes," making explainability difficult.
+* Analysts use tools like SHAP (Shapley Additive Explanations) to break down how different factors contribute to predictions.
 
-*While GenAI is great for assisting in summarizing explanations, relying solely on it for explainability presents significant risks—it may "hallucinate" or generate inaccurate justifications that do not reflect the true model logic. Best practice is to use established interpretability frameworks to ensure transparency and accuracy.
+GenAI prompt:
+
+*"Explain why this model predicted high delinquency risk for a specific customer."*
+
+"While GenAI is great for assisting in summarizing explanations, relying solely on it for explainability presents significant risks—it may "hallucinate" or generate inaccurate justifications that do not reflect the true model logic. Best practice is to use established interpretability frameworks to ensure transparency and accuracy."
 
 Fairness
 A fair model should:
