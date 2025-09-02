@@ -51,7 +51,7 @@ Why EDA Matters in Predicting Delinquency ?
 
 * Detecting patterns and risk factors: Identifying behaviors associated with delinquency.
 
-### Review the Dataset using GEN -AI
+#### Review the Dataset using GEN -AI
 
 The dataset was uploaded to a GenAI tool (e.g., Gemini, ChatGPT) to perform an initial analysis.
 <img width="1296" height="591" alt="Screenshot 2025-08-29 183912" src="https://github.com/user-attachments/assets/cfc13e1e-f37b-40b5-bdd2-37a62f5817b4" />
@@ -84,7 +84,7 @@ The initial analysis produced the following key findings:
 ### Key Anomalies:
    * **Credit_Utilization:** Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
 
-   * **Skewed Distributions:** Income, Credit_Utilization, and Loan_Balance were all right-skewed.
+   * **Skewed_Distributions:** Income, Credit_Utilization, and Loan_Balance were all right-skewed.
 
    * **Delinquent_Account Imbalance:** The target variable is severely imbalanced, with only 16% of accounts being delinquent. This requires special handling (e.g., oversampling,                undersampling) to prevent model bias.
 
@@ -105,23 +105,22 @@ The initial analysis produced the following key findings:
 
 The initial assessment of the dataset reveals generally good data quality, with most features being complete and within expected ranges. However, the presence of missing values in Income and Loan_Balance requires careful handling, and the inconsistent capitalization in Employment_Status necessitates data cleaning. The most significant data quality challenge for modeling delinquency is the substantial class imbalance in the Delinquent_Account target variable, which must be addressed to build an effective predictive model. Overall, the dataset provides a solid foundation for building a delinquency prediction model, provided these identified issues are appropriately managed.
 
-### Address Missing Data and Data Quality Issues:
+#### Address Missing Data and Data Quality Issues:
 The following prompts were used to determine the best approach for handling missing data:
 
 “Suggest an imputation strategy for missing values in this dataset based on industry best practices.”
-
 “Propose best-practice methods to handle missing credit utilization data for predictive modeling.”
 
 ### Recommended Imputation Strategies:
-   * For Credit_Score (0.4% missing): Median imputation is sufficient due to the low percentage of missing data.
+* For Credit_Score (0.4% missing):** Median imputation is sufficient due to the low percentage of missing data.
 
-   * For Income (7.8% missing) and Loan_Balance (5.8% missing):
+* For Income (7.8% missing) and Loan_Balance (5.8% missing):
 
-   * Regression Imputation: Predicts missing values based on other features.
+* Regression Imputation: Predicts missing values based on other features.
 
-   * K-Nearest Neighbors (KNN) Imputation: Fills values based on the k most similar data points.
+* K-Nearest Neighbors (KNN) Imputation: Fills values based on the k most similar data points.
 
-   * Multiple Imputation by Chained Equations (MICE): Considered the gold standard, this method creates multiple imputed datasets to account for uncertainty.
+* Multiple Imputation by Chained Equations (MICE): Considered the gold standard, this method creates multiple imputed datasets to account for uncertainty.
 
 For a balance of effectiveness and simplicity, KNN Imputation or Regression Imputation are good starting points. For maximum statistical rigor, MICE is recommended.
 
@@ -132,29 +131,26 @@ The data cleaning and imputation steps were implemented in a Python notebook.
 My Notebook: [Uploading Geldium Data Cleaning.ipynb…]()
 
 
-Detect Patterns and Risk Factors
+#### Detect Patterns and Risk Factors
 The analysis identified several high-risk indicators for delinquency.
 
-High-Risk Indicators for Delinquency
-Missed_Payments: A higher number of missed payments directly increases delinquency risk.
+* **Missed_Payments:** A higher number of missed payments directly increases delinquency risk.
 
-Credit_Utilization: High utilization suggests financial strain and a greater likelihood of default.
+* **Credit_Utilization:** High utilization suggests financial strain and a greater likelihood of default.
 
-Credit_Score: A lower score reflects a history of poor credit management.
+* **Credit_Score:** A lower score reflects a history of poor credit management.
 
-Debt_to_Income_Ratio: A higher ratio indicates a greater financial burden relative to income.
+* **Debt_to_Income_Ratio:** A higher ratio indicates a greater financial burden relative to income.
 
-"Late" or "Missed" Payment Status (Month_1 to Month_6): A trend of deteriorating payment behavior is a strong precursor to delinquency.
+* **"Late" or "Missed" Payment Status (Month_1 to Month_6):** A trend of deteriorating payment behavior is a strong precursor to delinquency.
 
-Insights Impacting Delinquency Prediction
-The significant class imbalance in the target variable must be addressed to build an accurate model.
-
-Skewed numerical distributions may require transformation (e.g., log transformation) for certain models.
-
-The time-series potential of the Month_x variables can be leveraged by creating new features (e.g., number of late payments in the last 3 months).
+#### Insights Impacting Delinquency Prediction
+* The significant class imbalance in the target variable must be addressed to build an accurate model.
+* Skewed numerical distributions may require transformation (e.g., log transformation) for certain models.
+* The time-series potential of the Month_x variables can be leveraged by creating new features (e.g., number of late payments in the last 3 months).
 
 
-Exploratory Data Analysis (EDA) Summary Report
+### Exploratory Data Analysis (EDA) Summary Report
 1. Introduction
 This report summarizes the EDA performed on the delinquency prediction dataset. The goal was to understand the data's structure, identify patterns, detect anomalies, and pinpoint potential risk indicators for predicting customer delinquency.
 
