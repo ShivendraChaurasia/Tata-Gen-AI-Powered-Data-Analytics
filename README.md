@@ -1,10 +1,10 @@
 # AI-Powered Credit Card Delinquency Prediction for Geldium Finance
 This repository documents the process of developing an AI-powered solution to reduce credit card delinquency rates for *Geldium Finance*. This project was undertaken as part of a *Tata iQ Job Simulation* for an AI transformation consultant role.
 
-### Project Overview
+### Project Overview:
 As an *AI transformation consultant* at Tata iQ, the primary objective is to leverage data-driven decision-making to solve challenges in the financial services sector. This project focuses on helping *Geldium Finance*, a financial services company, address its high credit card delinquency rate.
 
-### Goal
+### Goal:
 
 The main goal is to analyze customer data to predict delinquency risks using advanced analytics. This involves:
 
@@ -16,7 +16,7 @@ The main goal is to analyze customer data to predict delinquency risks using adv
 
 * Ensuring all AI-driven solutions are ethical, explainable, and effective.
 
-### Project Tasks
+### Project Tasks:
 
 The project is broken down into the following key tasks:
 
@@ -34,7 +34,7 @@ Exploratory data analysis (EDA) is the foundational step in understanding a data
 
 Why EDA Matters in Predicting Delinquency ?
 
-* Ensures data integrity:' Identifies missing values, duplicates, and inconsistencies.
+* Ensures data integrity: Identifies missing values, duplicates, and inconsistencies.
 
 * Highlights patterns and anomalies: Helps detect trends in customer behavior.
 
@@ -58,11 +58,9 @@ The dataset was uploaded to a GenAI tool (e.g., Gemini, ChatGPT) to perform an i
 
 After uploading the following prompts were used:
 
-“Summarize key patterns, outliers, and missing values in this dataset. Highlight any fields that might present problems for modeling delinquency.”
+*“Summarize key patterns, outliers, and missing values in this dataset. Highlight any fields that might present problems for modeling delinquency. Identify the top 3 variables most likely to predict delinquency based on this dataset. Provide brief reasoning.”*
 
-“Identify the top 3 variables most likely to predict delinquency based on this dataset. Provide brief reasoning.”
-
-Result
+**Result:**
 <img width="1307" height="564" alt="Screenshot 2025-08-29 183803" src="https://github.com/user-attachments/assets/7afd0403-bf9e-47ba-a780-a37e7c782c26" />
 
 <img width="1300" height="568" alt="Screenshot 2025-08-29 184102" src="https://github.com/user-attachments/assets/655d998e-f88b-4dab-984a-c68077b9d88c" />
@@ -81,14 +79,14 @@ The initial analysis produced the following key findings:
 * **Inconsistent Data:**
   * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
-### Key Anomalies:
+### Key Anomalies
    * **Credit_Utilization:** Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
 
    * **Skewed_Distributions:** Income, Credit_Utilization, and Loan_Balance were all right-skewed.
 
    * **Delinquent_Account Imbalance:** The target variable is severely imbalanced, with only 16% of accounts being delinquent. This requires special handling (e.g., oversampling,                undersampling) to prevent model bias.
 
-### Early Indicators of Delinquency Risk:
+### Early Indicators of Delinquency Risk
 
    * **Missed_Payments:** This feature directly quantifies past payment behavior and is a strong early indicator. Higher values of missed payments are likely to correlate with increased delinquency risk.
 
@@ -101,20 +99,19 @@ The initial analysis produced the following key findings:
    * **Payment status trend from Month_1 to Month_6:** The sequence of payment statuses ('On-time', 'Late', 'Missed') across these six months provides a temporal pattern of payment behavior. A trend of increasing 'Late' or 'Missed' payments over these months would be a strong early indicator of escalating delinquency risk.
 
 
-### Initial Data Quality Observations Summary
+### Initial Data Quality Observation Summary
 
 The initial assessment of the dataset reveals generally good data quality, with most features being complete and within expected ranges. However, the presence of missing values in Income and Loan_Balance requires careful handling, and the inconsistent capitalization in Employment_Status necessitates data cleaning. The most significant data quality challenge for modeling delinquency is the substantial class imbalance in the Delinquent_Account target variable, which must be addressed to build an effective predictive model. Overall, the dataset provides a solid foundation for building a delinquency prediction model, provided these identified issues are appropriately managed.
 
-### Address Missing Data and Data Quality Issues:
+### Address Missing Data and Data Quality Issues
 The following prompts were used to determine the best approach for handling missing data:
 
-“Suggest an imputation strategy for missing values in this dataset based on industry best practices.”
-“Propose best-practice methods to handle missing credit utilization data for predictive modeling.”
+*“Suggest an imputation strategy for missing values in this dataset based on industry best practices. Propose best-practice methods to handle missing credit utilization data for predictive modeling.”*
 
-### Recommended Imputation Strategies:
+### Recommended Imputation Strategies
 * For Credit_Score (0.4% missing):** Median imputation is sufficient due to the low percentage of missing data.
 
-* For Income (7.8% missing) and Loan_Balance (5.8% missing):
+* For Income (7.8% missing) and Loan_Balance (5.8% missing).
 
 * Regression Imputation: Predicts missing values based on other features.
 
@@ -145,12 +142,14 @@ The analysis identified several high-risk indicators for delinquency.
 * **"Late" or "Missed" Payment Status (Month_1 to Month_6):** A trend of deteriorating payment behavior is a strong precursor to delinquency.
 
 ### Insights Impacting Delinquency Prediction
+
 * The significant class imbalance in the target variable must be addressed to build an accurate model.
 * Skewed numerical distributions may require transformation (e.g., log transformation) for certain models.
 * The time-series potential of the Month_x variables can be leveraged by creating new features (e.g., number of late payments in the last 3 months).
 
 
 ### Exploratory Data Analysis (EDA) Summary Report
+
 **1. Introduction:**
 This report summarizes the EDA performed on the delinquency prediction dataset. The goal was to understand the data's structure, identify patterns, detect anomalies, and pinpoint potential risk indicators for predicting customer delinquency.
 
@@ -339,7 +338,7 @@ Each model has strengths and trade-offs. In this task, your goal is to choose th
 
 AI-driven credit risk models must be accurate, explainable, and fair to ensure responsible financial decision-making. Even well-performing models can introduce bias, produce uninterpretable decisions, or unintentionally disadvantage certain customer groups. Addressing these risks is essential for ethical and legal compliance in financial services.
 
-**Bias**
+**Bias:**
 
 Bias occurs when a model systematically favors or disadvantages certain groups, often due to historical inequalities or imbalanced data.
 
@@ -355,7 +354,7 @@ GenAI prompt:
 
 While GenAI can assist in identifying potential bias patterns, it should not be relied upon as an authoritative tool for bias detection. GenAI itself can embed biases from its training data and may produce misleading results. Best practice is to use formal statistical fairness metrics (e.g., disparate impact analysis, demographic parity) alongside human oversight.
 
-**Explainability**
+**Explainability:**
 
 Explainability ensures that decision-makers can understand and justify a model’s predictions.
 
@@ -369,7 +368,7 @@ GenAI prompt:
 
 While GenAI is great for assisting in summarizing explanations, relying solely on it for explainability presents significant risks—it may "hallucinate" or generate inaccurate justifications that do not reflect the true model logic. Best practice is to use established interpretability frameworks to ensure transparency and accuracy.
 
-**Fairness**
+**Fairness:**
 
 A fair model should:
 
