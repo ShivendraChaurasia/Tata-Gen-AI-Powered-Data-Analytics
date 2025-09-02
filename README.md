@@ -34,22 +34,22 @@ Exploratory data analysis (EDA) is the foundational step in understanding a data
 
 Why EDA Matters in Predicting Delinquency ?
 
-* 'Ensures data integrity:' Identifies missing values, duplicates, and inconsistencies.
+* Ensures data integrity:' Identifies missing values, duplicates, and inconsistencies.
 
-* 'Highlights patterns and anomalies:' Helps detect trends in customer behavior.
+* Highlights patterns and anomalies: Helps detect trends in customer behavior.
 
-*    'Prevents biased models:' Reduces the risk of unfair treatment by ensuring diverse data representation.
+* Prevents biased models: Reduces the risk of unfair treatment by ensuring diverse data representation.
 
-* 'Supports better decision-making:' Provides clear insights for proactive customer engagement.
+* Supports better decision-making: Provides clear insights for proactive customer engagement.
 
 ### Key Steps in Conducting EDA:
-* 'Understanding the dataset:' Identifying key variables, data types, and missing values.
+* Understanding the dataset: Identifying key variables, data types, and missing values.
 
-* 'Identifying missing values and outliers:' Deciding whether to remove or impute missing data.
+* Identifying missing values and outliers: Deciding whether to remove or impute missing data.
 
-* 'Understanding relationships between variables:' Exploring correlations, such as between credit utilization and delinquency risk.
+* Understanding relationships between variables: Exploring correlations, such as between credit utilization and delinquency risk.
 
-* 'Detecting patterns and risk factors:' Identifying behaviors associated with delinquency.
+* Detecting patterns and risk factors: Identifying behaviors associated with delinquency.
 
 ### Review the Dataset using GEN -AI
 
@@ -75,59 +75,59 @@ The initial analysis produced the following key findings:
 
 * #### Missing Values:
 
-    * 'Income:' 7.8% missing (39 of 500 records).
-    * 'Loan_Balance:' 5.8% missing (29 of 500 records).
-    * 'Credit_Score:' 0.4% missing (2 of 500 records).
+    * Income: 7.8% missing (39 of 500 records).
+    * Loan_Balance: 5.8% missing (29 of 500 records).
+    * Credit_Score: 0.4% missing (2 of 500 records).
 
 * #### Inconsistent Data:
 
-   * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
+      * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
-Key Anomalies
-Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
+### Key Anomalies
+      * Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
 
-Skewed Distributions: Income, Credit_Utilization, and Loan_Balance were all right-skewed.
+      * Skewed Distributions: Income, Credit_Utilization, and Loan_Balance were all right-skewed.
 
-Delinquent_Account Imbalance: The target variable is severely imbalanced, with only 16% of accounts being delinquent. This requires special handling (e.g., oversampling, undersampling) to prevent model bias.
+      * Delinquent_Account Imbalance: The target variable is severely imbalanced, with only 16% of accounts being delinquent. This requires special handling (e.g., oversampling,                undersampling) to prevent model bias.
 
-Early Indicators of Delinquency Risk:
+### Early Indicators of Delinquency Risk:
 
-Missed_Payments: This feature directly quantifies past payment behavior and is a strong early indicator. Higher values of missed payments are likely to correlate with increased delinquency risk.
+      * Missed_Payments: This feature directly quantifies past payment behavior and is a strong early indicator. Higher values of missed payments are likely to correlate with increased delinquency risk.
 
-Credit_Utilization: High credit utilization rates (closer to 1.0) generally indicate financial strain and are often strong predictors of future delinquency.
+      * Credit_Utilization: High credit utilization rates (closer to 1.0) generally indicate financial strain and are often strong predictors of future delinquency.
 
-Credit_Score: Lower credit scores are typically associated with higher credit risk and thus serve as a key indicator of potential delinquency.
+      * Credit_Score: Lower credit scores are typically associated with higher credit risk and thus serve as a key indicator of potential delinquency.
 
-Debt_to_Income_Ratio: A higher debt-to-income ratio suggests a greater financial burden relative to income, which can be an early warning sign of difficulty in managing finances and potential delinquency.
+      * Debt_to_Income_Ratio: A higher debt-to-income ratio suggests a greater financial burden relative to income, which can be an early warning sign of difficulty in managing finances and potential delinquency.
 
-Payment status trend from Month_1 to Month_6: The sequence of payment statuses ('On-time', 'Late', 'Missed') across these six months provides a temporal pattern of payment behavior. A trend of increasing 'Late' or 'Missed' payments over these months would be a strong early indicator of escalating delinquency risk.
+      * Payment status trend from Month_1 to Month_6: The sequence of payment statuses ('On-time', 'Late', 'Missed') across these six months provides a temporal pattern of payment behavior. A trend of increasing 'Late' or 'Missed' payments over these months would be a strong early indicator of escalating delinquency risk.
 
 
-Initial Data Quality Observations Summary
+### Initial Data Quality Observations Summary
 
 The initial assessment of the dataset reveals generally good data quality, with most features being complete and within expected ranges. However, the presence of missing values in Income and Loan_Balance requires careful handling, and the inconsistent capitalization in Employment_Status necessitates data cleaning. The most significant data quality challenge for modeling delinquency is the substantial class imbalance in the Delinquent_Account target variable, which must be addressed to build an effective predictive model. Overall, the dataset provides a solid foundation for building a delinquency prediction model, provided these identified issues are appropriately managed.
 
-Address Missing Data and Data Quality Issues
+### Address Missing Data and Data Quality Issues:
 The following prompts were used to determine the best approach for handling missing data:
 
 “Suggest an imputation strategy for missing values in this dataset based on industry best practices.”
 
 “Propose best-practice methods to handle missing credit utilization data for predictive modeling.”
 
-Recommended Imputation Strategies:
-For Credit_Score (0.4% missing): Median imputation is sufficient due to the low percentage of missing data.
+### Recommended Imputation Strategies:
+   * For Credit_Score (0.4% missing): Median imputation is sufficient due to the low percentage of missing data.
 
-For Income (7.8% missing) and Loan_Balance (5.8% missing):
+   * For Income (7.8% missing) and Loan_Balance (5.8% missing):
 
-Regression Imputation: Predicts missing values based on other features.
+   * Regression Imputation: Predicts missing values based on other features.
 
-K-Nearest Neighbors (KNN) Imputation: Fills values based on the k most similar data points.
+   * K-Nearest Neighbors (KNN) Imputation: Fills values based on the k most similar data points.
 
-Multiple Imputation by Chained Equations (MICE): Considered the gold standard, this method creates multiple imputed datasets to account for uncertainty.
+   * Multiple Imputation by Chained Equations (MICE): Considered the gold standard, this method creates multiple imputed datasets to account for uncertainty.
 
 For a balance of effectiveness and simplicity, KNN Imputation or Regression Imputation are good starting points. For maximum statistical rigor, MICE is recommended.
 
-Python Implementation
+**Python Implementation**
 
 The data cleaning and imputation steps were implemented in a Python notebook.
 
