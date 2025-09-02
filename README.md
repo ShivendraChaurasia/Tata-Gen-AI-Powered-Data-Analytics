@@ -82,7 +82,7 @@ The initial analysis produced the following key findings:
 * #### Inconsistent Data:
   * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
-### Key Anomalies
+### Key Anomalies:
    * Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
 
    * Skewed Distributions: Income, Credit_Utilization, and Loan_Balance were all right-skewed.
@@ -91,7 +91,7 @@ The initial analysis produced the following key findings:
 
 ### Early Indicators of Delinquency Risk:
 
-   * Missed_Payments: This feature directly quantifies past payment behavior and is a strong early indicator. Higher values of missed payments are likely to correlate with increased delinquency risk.
+   * **Missed_Payments:** This feature directly quantifies past payment behavior and is a strong early indicator. Higher values of missed payments are likely to correlate with increased delinquency risk.
 
    * Credit_Utilization: High credit utilization rates (closer to 1.0) generally indicate financial strain and are often strong predictors of future delinquency.
 
