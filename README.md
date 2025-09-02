@@ -244,9 +244,11 @@ By leveraging no-code AI solutions, analysts and business professionals can conc
 GenAI simplifies the predictive modeling process by guiding users through key steps.
 
 **1. Selecting the right model type**
+
 Predictive modeling involves choosing the best algorithm for the task. GenAI can analyze dataset characteristics and recommend the most suitable techniques. However, understanding these models yourself is key to making an informed decision.
 
 Three core modeling approaches:
+
 * Decision trees – Good for explaining why a prediction was made.
 * Logistic regression – Useful for predicting binary outcomes (e.g., delinquent vs. non-delinquent).
 * Neural networks – Effective for complex patterns but harder to interpret.
