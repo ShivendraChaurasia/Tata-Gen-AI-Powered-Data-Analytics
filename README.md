@@ -74,12 +74,11 @@ The initial analysis produced the following key findings:
 ### Notable Missing or Inconsistent Data
 
 * **Missing Values:**
-
     * Income: 7.8% missing (39 of 500 records).
     * Loan_Balance: 5.8% missing (29 of 500 records).
     * Credit_Score: 0.4% missing (2 of 500 records).
 
-* #### Inconsistent Data:
+* **Inconsistent Data:**
   * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
 ### Key Anomalies:
