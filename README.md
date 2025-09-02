@@ -1,7 +1,7 @@
 # AI-Powered Credit Card Delinquency Prediction for Geldium Finance
 This repository documents the process of developing an AI-powered solution to reduce credit card delinquency rates for Geldium Finance. This project was undertaken as part of a Tata iQ job simulation for an AI transformation consultant role.
 
-# Project Overview
+## Project Overview
 As an AI transformation consultant at Tata iQ, the primary objective is to leverage data-driven decision-making to solve challenges in the financial services sector. This project focuses on helping Geldium Finance, a financial services company, address its high credit card delinquency rate.
 
 ## Goal
