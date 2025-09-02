@@ -1,4 +1,4 @@
-# AI-Powered Credit Card Delinquency Prediction for Geldium Finance
+## AI-Powered Credit Card Delinquency Prediction for Geldium Finance
 This repository documents the process of developing an AI-powered solution to reduce credit card delinquency rates for Geldium Finance. This project was undertaken as part of a Tata iQ job simulation for an AI transformation consultant role.
 
 # Project Overview
