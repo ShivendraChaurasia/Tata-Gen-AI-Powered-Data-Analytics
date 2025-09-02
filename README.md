@@ -155,15 +155,17 @@ The analysis identified several high-risk indicators for delinquency.
 This report summarizes the EDA performed on the delinquency prediction dataset. The goal was to understand the data's structure, identify patterns, detect anomalies, and pinpoint potential risk indicators for predicting customer delinquency.
 
 **2. Dataset Overview**
-   Number of records: 500
-   
-   Key variables: Customer_ID, Age, Income, Credit_Score, Credit_Utilization, Missed_Payments, Delinquent_Account, Loan_Balance, Debt_to_Income_Ratio, Employment_Status, Account_Tenure,    Credit_Card_Type, Location, and Month_1 - Month_6.
-   Data types: A mix of numerical (float64, int64) and categorical (object) data.
-   Anomalies:
-   Class Imbalance: 84% non-delinquent vs. 16% delinquent.
-   Inconsistent Categorical Entries: Employment_Status required standardization.
-   Potential Outliers: Credit_Utilization values slightly above 1.0.
-   Skewed Distributions: Income, Loan_Balance, and Credit_Utilization.
+Number of records: 500
+
+Key variables: Customer_ID, Age, Income, Credit_Score, Credit_Utilization, Missed_Payments, Delinquent_Account, Loan_Balance, Debt_to_Income_Ratio, Employment_Status, Account_Tenure,    
+Credit_Card_Type, Location, and Month_1 - Month_6. 
+
+Data types: A mix of numerical (float64, int64) and categorical (object) data.
+* **Anomalies:**
+   * Class Imbalance: 84% non-delinquent vs. 16% delinquent.
+   * Inconsistent Categorical Entries: Employment_Status required standardization.
+   * Potential Outliers: Credit_Utilization values slightly above 1.0.
+   * Skewed Distributions: Income, Loan_Balance, and Credit_Utilization.
 
 **3. Missing Data Analysis**
    Variables with missing values:
