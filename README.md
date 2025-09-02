@@ -56,15 +56,10 @@ Why EDA Matters in Predicting Delinquency ?
 The dataset was uploaded to a GenAI tool (e.g., Gemini, ChatGPT) to perform an initial analysis.
 <img width="1296" height="591" alt="Screenshot 2025-08-29 183912" src="https://github.com/user-attachments/assets/cfc13e1e-f37b-40b5-bdd2-37a62f5817b4" />
 
-The following prompts were used:
-“Summarize key patterns, outliers, and missing values in this dataset. Highlight any fields that might present problems for modeling delinquency.”
-
-“Identify the top 3 variables most likely to predict delinquency based on this dataset. Provide brief reasoning.”
-
-
-After uploading use this or similar type of prompt,
+After uploading the following prompts were used:
 
 “Summarize key patterns, outliers, and missing values in this dataset. Highlight any fields that might present problems for modeling delinquency.”
+
 “Identify the top 3 variables most likely to predict delinquency based on this dataset. Provide brief reasoning.”
 
 Result
