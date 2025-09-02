@@ -83,23 +83,23 @@ The initial analysis produced the following key findings:
    * Employment_Status: This categorical feature had inconsistent entries (e.g., 'Employed', 'employed', 'EMP') that required standardization.
 
 ### Key Anomalies
-      * Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
+   * Credit_Utilization: Some records showed utilization slightly above 1.0, which may be data entry errors or extreme cases.
 
-      * Skewed Distributions: Income, Credit_Utilization, and Loan_Balance were all right-skewed.
+   * Skewed Distributions: Income, Credit_Utilization, and Loan_Balance were all right-skewed.
 
-      * Delinquent_Account Imbalance: The target variable is severely imbalanced, with only 16% of accounts being delinquent. This requires special handling (e.g., oversampling,                undersampling) to prevent model bias.
+   * Delinquent_Account Imbalance: The target variable is severely imbalanced, with only 16% of accounts being delinquent. This requires special handling (e.g., oversampling,                undersampling) to prevent model bias.
 
 ### Early Indicators of Delinquency Risk:
 
-      * Missed_Payments: This feature directly quantifies past payment behavior and is a strong early indicator. Higher values of missed payments are likely to correlate with increased delinquency risk.
+   * Missed_Payments: This feature directly quantifies past payment behavior and is a strong early indicator. Higher values of missed payments are likely to correlate with increased delinquency risk.
 
-      * Credit_Utilization: High credit utilization rates (closer to 1.0) generally indicate financial strain and are often strong predictors of future delinquency.
+   * Credit_Utilization: High credit utilization rates (closer to 1.0) generally indicate financial strain and are often strong predictors of future delinquency.
 
-      * Credit_Score: Lower credit scores are typically associated with higher credit risk and thus serve as a key indicator of potential delinquency.
+   * Credit_Score: Lower credit scores are typically associated with higher credit risk and thus serve as a key indicator of potential delinquency.
 
-      * Debt_to_Income_Ratio: A higher debt-to-income ratio suggests a greater financial burden relative to income, which can be an early warning sign of difficulty in managing finances and potential delinquency.
+   * Debt_to_Income_Ratio: A higher debt-to-income ratio suggests a greater financial burden relative to income, which can be an early warning sign of difficulty in managing finances and potential delinquency.
 
-      * Payment status trend from Month_1 to Month_6: The sequence of payment statuses ('On-time', 'Late', 'Missed') across these six months provides a temporal pattern of payment behavior. A trend of increasing 'Late' or 'Missed' payments over these months would be a strong early indicator of escalating delinquency risk.
+   * Payment status trend from Month_1 to Month_6: The sequence of payment statuses ('On-time', 'Late', 'Missed') across these six months provides a temporal pattern of payment behavior. A trend of increasing 'Late' or 'Missed' payments over these months would be a strong early indicator of escalating delinquency risk.
 
 
 ### Initial Data Quality Observations Summary
