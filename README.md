@@ -67,7 +67,7 @@ Result
 
 <img width="1300" height="568" alt="Screenshot 2025-08-29 184102" src="https://github.com/user-attachments/assets/655d998e-f88b-4dab-984a-c68077b9d88c" />
 
-### Data Analysis Findings Report
+##### Data Analysis Findings Report ☝️
 
 The initial analysis produced the following key findings:
 
