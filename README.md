@@ -256,7 +256,7 @@ Three core modeling approaches:
 We will explore these models further in the next section to help you select the right approach for this task.
 
 GenAI prompt:
-"Based on this dataset, which predictive modeling techniques are best suited for identifying customers likely to miss payments? Explain why."
+*"Based on this dataset, which predictive modeling techniques are best suited for identifying customers likely to miss payments? Explain why."*
 
 2. Generating model code without coding
 With the right prompts, GenAI can generate an initial modeling workflow in Python, R, or SQL. However, these outputs should be viewed as a starting point—manual review and refinement are essential to ensure alignment with best practices..
