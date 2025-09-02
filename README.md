@@ -224,28 +224,32 @@ Geldium wants to use AI to predict which customers are at risk of missing paymen
 * Use GenAI tools to develop a predictive model for identifying high-risk customers.
 * Choose and justify the best approach—whether decision trees, logistic regression, or another technique.
 * Define a plan to evaluate model performance while ensuring fairness and explainability.
+
 Geldium will rely on this model to enhance risk assessment and guide intervention decisions. Your structured approach will help determine how accurate and reliable the AI-driven predictions will be.
 
-What is predictive modeling?
+### What is predictive modeling?
+
 Predictive modeling is the process of using historical data to forecast future outcomes. In the context of financial services, it helps institutions like Geldium identify customers who are at risk of delinquency so they can take proactive measures. Traditional predictive modeling typically requires coding expertise, but GenAI tools can assist analysts in building, testing, and refining models with less manual coding.
 
 Instead of manually programming statistical models, GenAI can:
 
-Suggest appropriate modeling techniques based on dataset characteristics.
-Draft a description of model logic, or even sample code.
-Assist in interpreting results and refining model performance.
+* Suggest appropriate modeling techniques based on dataset characteristics.
+* Draft a description of model logic, or even sample code.
+* Assist in interpreting results and refining model performance.
+
 By leveraging no-code AI solutions, analysts and business professionals can conceptualize predictive models without needing to be machine learning experts. However, while these tools simplify the modeling process, the outputs they generate must still be validated and refined by experienced analysts to ensure accuracy and reliability in decision-making.
 
-How GenAI assists in predictive modeling
+### How GenAI assists in predictive modeling ?
+
 GenAI simplifies the predictive modeling process by guiding users through key steps.
 
-1. Selecting the right model type
+**1. Selecting the right model type**
 Predictive modeling involves choosing the best algorithm for the task. GenAI can analyze dataset characteristics and recommend the most suitable techniques. However, understanding these models yourself is key to making an informed decision.
 
 Three core modeling approaches:
-Decision trees – Good for explaining why a prediction was made.
-Logistic regression – Useful for predicting binary outcomes (e.g., delinquent vs. non-delinquent).
-Neural networks – Effective for complex patterns but harder to interpret.
+* Decision trees – Good for explaining why a prediction was made.
+* Logistic regression – Useful for predicting binary outcomes (e.g., delinquent vs. non-delinquent).
+* Neural networks – Effective for complex patterns but harder to interpret.
 
 We will explore these models further in the next section to help you select the right approach for this task.
 
