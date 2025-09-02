@@ -198,33 +198,32 @@ Generative AI tools were used to accelerate the EDA process.
 
    * "Provide all the steps as of now from the beginning to last in a ipynb file."
 
-**6. Conclusion & Next Steps**
+### 6. Conclusion & Next Steps:
 
 This EDA provided valuable insights into the dataset's quality and characteristics. The key challenges are missing values, class imbalance, and the need for feature engineering.
 
-Recommended Next Steps:
-Address Class Imbalance: Apply techniques like SMOTE (oversampling) or use algorithms robust to imbalance.
+**Recommended Next Steps:**
 
-Feature Engineering:
+* Address Class Imbalance: Apply techniques like SMOTE (oversampling) or use algorithms robust to imbalance.
 
-Derive new features from Month_1 to Month_6 (e.g., payment trends, total late payments).
+* Feature Engineering:
 
-Encode categorical variables like Credit_Card_Type and Location using one-hot encoding.
+   * Derive new features from Month_1 to Month_6 (e.g., payment trends, total late payments).
 
-Model Selection and Training: Explore various classification models and evaluate them using appropriate metrics for imbalanced datasets (e.g., Precision, Recall, F1-score, AUC-ROC).
+   * Encode categorical variables like Credit_Card_Type and Location using one-hot encoding.
 
-Model Evaluation: Rigorously test the final model on unseen data to ensure it generalizes well.
+* Model Selection and Training: Explore various classification models and evaluate them using appropriate metrics for imbalanced datasets (e.g., Precision, Recall, F1-score, AUC-ROC).
+
+* Model Evaluation: Rigorously test the final model on unseen data to ensure it generalizes well.
 
 
-TASK -2
-
-Predictive Modeling using GenAI - Complete Implementation
+## TASK 2: Predictive Modeling using GenAI
 
 Geldium wants to use AI to predict which customers are at risk of missing payments so they can take proactive steps to reduce delinquency. Our goal is to develop a model that supports the Collections team in prioritizing outreach and intervention strategies.
 
-Use GenAI tools to develop a predictive model for identifying high-risk customers.
-Choose and justify the best approach—whether decision trees, logistic regression, or another technique.
-Define a plan to evaluate model performance while ensuring fairness and explainability.
+* Use GenAI tools to develop a predictive model for identifying high-risk customers.
+* Choose and justify the best approach—whether decision trees, logistic regression, or another technique.
+* Define a plan to evaluate model performance while ensuring fairness and explainability.
 Geldium will rely on this model to enhance risk assessment and guide intervention decisions. Your structured approach will help determine how accurate and reliable the AI-driven predictions will be.
 
 What is predictive modeling?
